@@ -1,5 +1,5 @@
 import sys ##Used to access: sys.exc_info() → gives exception details
-import logging
+from src.logger import logging
 
 def error_message_details(error,error_detail:sys):  ##error → the original exception, error_detail → system info (sys)
     _,_,exc_tb=error_detail.exc_info()  ##_ → exception type (ignored), _ → exception value (ignored), exc_tb → traceback object (important)

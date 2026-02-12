@@ -1,1 +1,47 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            margin-top: 150px;
+        }
+        .container {
+            background: rgba(0,0,0,0.4);
+            padding: 40px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffcc00;
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #ffdd33;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎓 Student Exam Performance Predictor</h1>
+        <p>Predict Maths Score based on student details</p>
+
+        <a href="{{ url_for('predict_datapoint') }}" class="btn">
+            Start Prediction
+        </a>
+    </div>
+
+</body>
+</html>
